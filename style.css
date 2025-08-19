@@ -288,3 +288,91 @@ body {
 .seccion-general.skills {
   margin-bottom: 250px; 
 }
+
+
+.btn-toggle-theme {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 2000;
+  background-color: #3d2b60;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 1.4rem;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos para modo claro */
+body.light-mode {
+  background-color: #f4f4f4;
+  color: #1e1b3a;
+}
+
+body.light-mode .sidebar,
+body.light-mode .bg-sidebar {
+  background-color: #e0d9f7;
+}
+
+body.light-mode .nav-link {
+  color: #7e1f9c;
+}
+
+body.light-mode .nav-link:hover {
+  color: #333;
+}
+
+body.light-mode .btn-cv {
+  background-color: #7e1f9c;
+  color: white;
+}
+
+body.light-mode .btn-cv:hover {
+  background-color: #1e1b3a;
+  color: white;
+}
+
+body.light-mode .card-dark {
+  background-color: #fff;
+  color: #1e1b3a;
+}
+
+body.light-mode .btn-skill {
+  background-color: #e0d9f7;
+  color: #1e1b3a;
+  border-color: #1e1b3a;
+}
+
+body.light-mode .btn-skill:hover {
+  background-color: #7e1f9c;
+  color: white;
+  border-color: #7e1f9c;
+}
+/* Corrección para el modo claro - correo */
+body.light-mode #correo {
+  color: #1e1b3a; /* texto oscuro */
+  text-shadow: none; /* elimina el resplandor del modo oscuro */
+}
+
+body.light-mode #correo:hover {
+  color: #7e1f9c;
+  text-shadow: none;
+}
+
+/* (Opcional) si también quieres ajustar #logo1 */
+body.light-mode #logo1 {
+  color: #1e1b3a;
+  text-shadow: none;
+}
+
+body.light-mode #logo1:hover {
+  color: #7e1f9c;
+  transform: scale(1.15);
+  text-shadow: none;
+  cursor: pointer;
+}
+body.light-mode .contacto {
+  color: #555; /* gris oscuro, visible en fondo claro */
+}
