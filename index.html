@@ -4,237 +4,567 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sebastian Hernandez - Portafolio</title>
+  <title>Sebastian Hernandez | Backend Java Developer</title>
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+  <!-- BOTÓN MOBILE -->
   <button class="btn btn-hamburguesa d-lg-none" type="button" data-bs-toggle="offcanvas"
     data-bs-target="#offcanvasSidebar">
     <i class="bi bi-list"></i>
   </button>
 
+  <!-- SIDEBAR DESKTOP -->
   <div class="sidebar d-none d-lg-flex flex-column align-items-center text-center p-3">
-    <img src="./img/29 jul 2025, 01_25_20 p.m..png" class="avatar-img mb-3" alt="Avatar" width="100">
+
+    <img src="./img/29 jul 2025, 01_25_20 p.m..png" class="avatar-img mb-4" alt="Avatar">
+
     <nav class="nav flex-column">
       <a class="nav-link" href="#">SEBASTIAN</a>
       <a class="nav-link" href="#sobre-mi">SOBRE MI</a>
-      <a class="nav-link" href="#portafolio">PORTFOLIO</a>
+      <a class="nav-link" href="#stack">STACK</a>
+      <a class="nav-link" href="#services">SERVICIOS</a>
+      <a class="nav-link" href="#portafolio">PROYECTOS</a>
       <a class="nav-link" href="#educacion">EDUCACIÓN</a>
       <a class="nav-link" href="#skills">SKILLS</a>
-
     </nav>
+
   </div>
 
+  <!-- SIDEBAR MOBILE -->
   <div class="offcanvas offcanvas-start bg-sidebar text-center" tabindex="-1" id="offcanvasSidebar">
+
     <div class="offcanvas-header">
-      <h5 class="offcanvas-title"></h5>
       <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
     </div>
+
     <div class="offcanvas-body">
-      <img src="./img/29 jul 2025, 01_25_20 p.m..png" class="avatar-img mb-3" alt="Avatar" width="100">
+
+      <img src="./img/29 jul 2025, 01_25_20 p.m..png" class="avatar-img mb-4" alt="Avatar">
+
       <nav class="nav flex-column">
         <a class="nav-link" href="#">SEBASTIAN</a>
         <a class="nav-link" href="#sobre-mi">SOBRE MI</a>
-        <a class="nav-link" href="#portafolio">PORTFOLIO</a>
+        <a class="nav-link" href="#stack">STACK</a>
+        <a class="nav-link" href="#services">SERVICIOS</a>
+        <a class="nav-link" href="#portafolio">PROYECTOS</a>
         <a class="nav-link" href="#educacion">EDUCACIÓN</a>
         <a class="nav-link" href="#skills">SKILLS</a>
-
       </nav>
+
     </div>
   </div>
-  <button id="toggle-theme" class="btn-toggle-theme" aria-label="Cambiar tema">
+
+  <!-- TOGGLE THEME -->
+  <button id="toggle-theme" class="btn-toggle-theme">
     <i class="bi bi-moon-stars"></i>
   </button>
+
+  <!-- HERO -->
   <main class="main-content">
-    <div class="contenido text-md-start text-center" id="SEBASTIAN">
-      <h1 class="titulo">SEBASTIAN <span id="logo1">HERNANDEZ</span></h1>
-      <h2 class="descripcion">BIENVENIDO A MI PORTAFOLIO COMO DESARROLLADOR JAVA FULL STACK</h2>
-      <p class="contacto"> SI DESEAS CONTACTARME ESCRÍBEME <span id="correo">SSSHERNANDEZPEREZ@GMAIL.COM</span>
+
+    <section class="contenido text-md-start text-center" id="SEBASTIAN">
+
+      <span class="status-badge">
+        <i class="bi bi-circle-fill"></i>
+        Disponible para trabajar
+      </span>
+
+      <h1 class="titulo">
+        SEBASTIAN <span id="logo1">HERNANDEZ</span>
+      </h1>
+
+      <h2 class="descripcion">
+        Backend Java Developer especializado en APIs REST, Spring Boot y arquitecturas modernas.
+      </h2>
+
+      <p class="hero-description">
+        Desarrollo aplicaciones backend escalables utilizando Java, Spring Boot, JWT,
+        Docker y bases de datos SQL, combinando lógica sólida con interfaces modernas y responsivas.
       </p>
+
+      <p class="contacto">
+        CONTACTO:
+        <span id="correo">
+          SSSHERNANDEZPEREZ@GMAIL.COM
+        </span>
+      </p>
+
       <div class="cv-social-container">
-        <a href="https://drive.google.com/file/d/1-qolBg-ldW-svHHl_wDvJjClWhEtCGdT/view" target="_blank"
-          class="btn btn-cv">descarga mi CV</a>
-        <div class="social-icons mt-3">
-          <a href="https://www.linkedin.com/in/sebastian-david-hernandez-perez-fullstack/" target="_blank"
-            class="icon-link"><i class="bi bi-linkedin"></i></a>
-          <a href="https://www.instagram.com/sebastian_y_ya/" target="_blank" class="icon-link"><i
-              class="bi bi-instagram"></i></a>
-          <a href="https://github.com/SebastianHernandezDev" target="_blank" class="icon-link"><i
-              class="bi bi-github"></i></a>
+
+        <div class="hero-buttons">
+
+          <a href="https://drive.google.com/file/d/1-qolBg-ldW-svHHl_wDvJjClWhEtCGdT/view"
+            target="_blank"
+            class="btn btn-cv">
+            Descargar CV
+          </a>
+
+          <a href="https://api.whatsapp.com/send/?phone=573204823503"
+            target="_blank"
+            class="btn btn-outline-custom">
+            Hablemos
+          </a>
+
+        </div>
+
+        <div class="social-icons mt-4">
+
+          <a href="https://www.linkedin.com/in/sebastian-david-hernandez-perez-fullstack/"
+            target="_blank"
+            class="icon-link">
+            <i class="bi bi-linkedin"></i>
+          </a>
+
+          <a href="https://github.com/SebastianHernandezDev"
+            target="_blank"
+            class="icon-link">
+            <i class="bi bi-github"></i>
+          </a>
+
+          <a href="https://www.instagram.com/sebastian_y_ya/"
+            target="_blank"
+            class="icon-link">
+            <i class="bi bi-instagram"></i>
+          </a>
+
         </div>
       </div>
-    </div>
+
+    </section>
+
+    <!-- STACK -->
+    <section class="seccion-general container" id="stack">
+
+      <h2 class="subtitulo-seccion mb-5">
+        STACK PRINCIPAL
+      </h2>
+
+      <div class="hero-stack">
+
+        <span class="tech-badge">Java</span>
+        <span class="tech-badge">Spring Boot</span>
+        <span class="tech-badge">Spring Security</span>
+        <span class="tech-badge">JWT</span>
+        <span class="tech-badge">REST APIs</span>
+        <span class="tech-badge">JPA</span>
+        <span class="tech-badge">MySQL</span>
+        <span class="tech-badge">PostgreSQL</span>
+        <span class="tech-badge">Docker</span>
+        <span class="tech-badge">Mockito</span>
+        <span class="tech-badge">JUnit</span>
+        <span class="tech-badge">Git</span>
+        <span class="tech-badge">GitHub</span>
+        <span class="tech-badge">AWS</span>
+        <span class="tech-badge">Bootstrap</span>
+        <span class="tech-badge">JavaScript</span>
+        <span class="tech-badge">Responsive Design</span>
+
+      </div>
+
+    </section>
+
+    <!-- SOBRE MI -->
+    <section class="seccion-general sobre-mi container" id="sobre-mi">
+
+      <h2 class="subtitulo-seccion">
+        SOBRE MI
+      </h2>
+
+      <p class="texto-sobremi">
+        Soy Sebastián Hernández, desarrollador Backend Java Full Stack enfocado
+        en construir aplicaciones modernas, escalables y funcionales.
+      </p>
+
+      <p class="texto-sobremi">
+        Me especializo en Spring Boot, APIs REST y bases de datos SQL,
+        combinando lógica backend sólida con una visión moderna
+        de diseño y experiencia de usuario.
+      </p>
+
+      <p class="texto-sobremi">
+        Actualmente continúo fortaleciendo mis conocimientos
+        en seguridad backend, Docker y tecnologías cloud como AWS.
+      </p>
+
+      <blockquote class="frase-destacada mt-4">
+        “Construyo soluciones funcionales con enfoque moderno,
+        escalable y orientado a producto.”
+      </blockquote>
+
+    </section>
+
+    <!-- SERVICIOS -->
+    <section class="seccion-general container" id="services">
+
+      <h2 class="subtitulo-seccion mb-5">
+        LO QUE HAGO
+      </h2>
+
+      <div class="row g-4">
+
+        <div class="col-md-6">
+          <div class="service-card">
+
+            <i class="bi bi-server service-icon"></i>
+
+            <h4>
+              APIs REST
+            </h4>
+
+            <p>
+              Desarrollo APIs modernas y escalables utilizando Spring Boot
+              y arquitectura MVC.
+            </p>
+
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="service-card">
+
+            <i class="bi bi-shield-lock service-icon"></i>
+
+            <h4>
+              Seguridad JWT
+            </h4>
+
+            <p>
+              Implementación de autenticación segura utilizando
+              Spring Security y JWT.
+            </p>
+
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="service-card">
+
+            <i class="bi bi-database service-icon"></i>
+
+            <h4>
+              Bases de Datos
+            </h4>
+
+            <p>
+              Modelado e integración con MySQL y PostgreSQL
+              usando JPA/Hibernate.
+            </p>
+
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="service-card">
+
+            <i class="bi bi-box service-icon"></i>
+
+            <h4>
+              Docker & Deploy
+            </h4>
+
+            <p>
+              Contenerización y despliegue moderno de aplicaciones backend.
+            </p>
+
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- PROYECTOS -->
+    <section class="seccion-general portafolio container" id="portafolio">
+
+      <h2 class="subtitulo-seccion mb-4">
+        PROYECTOS DESTACADOS
+      </h2>
+
+      <p class="texto-sobremi mb-5">
+        Algunos proyectos enfocados en desarrollo backend,
+        APIs REST y experiencias full stack modernas.
+      </p>
+
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+        <!-- LA CAFETALERA -->
+        <div class="col">
+          <div class="card h-100 card-dark">
+
+            <img src="./img/Captura de pantalla 2025-08-18 221146.png"
+              class="card-img-top img-preview"
+              alt="La Cafetalera">
+
+            <div class="card-body d-flex flex-column">
+
+              <span class="project-type">
+                FEATURED PROJECT
+              </span>
+
+              <h5 class="card-title">
+                LA CAFETALERA
+              </h5>
+
+              <p class="card-text">
+                E-commerce enfocado en el sector cafetero colombiano
+                con integración backend y arquitectura moderna.
+              </p>
+
+              <div class="project-stack">
+                <span>Java</span>
+                <span>Spring Boot</span>
+                <span>MySQL</span>
+                <span>REST API</span>
+              </div>
+
+              <div class="mt-auto">
+
+                <a href="https://github.com/SebastianHernandezDev/LaCafetalera"
+                  target="_blank"
+                  class="btn btn-cv w-100 mb-2">
+                  Ver GitHub
+                </a>
+
+                <a href="https://master.dj8nwub5371ae.amplifyapp.com/"
+                  target="_blank"
+                  class="btn btn-outline-custom w-100">
+                  Ver Demo
+                </a>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- BACKEND -->
+        <div class="col">
+          <div class="card h-100 card-dark">
+
+            <img src="./img/backend-development-coding-software-engineering-600nw-2378388687.webp"
+              class="card-img-top img-preview"
+              alt="Backend">
+
+            <div class="card-body d-flex flex-column">
+
+              <span class="project-type">
+                BACKEND API
+              </span>
+
+              <h5 class="card-title">
+                E-COMMERCE BACKEND
+              </h5>
+
+              <p class="card-text">
+                API RESTful desarrollada con Spring Boot,
+                estructurada bajo arquitectura MVC y orientada a servicios escalables.
+              </p>
+
+              <div class="project-stack">
+                <span>Spring Boot</span>
+                <span>JWT</span>
+                <span>Docker</span>
+                <span>JPA</span>
+              </div>
+
+              <div class="mt-auto">
+
+                <a href="https://github.com/SebastianHernandezDev/LaCafetaleraBackend"
+                  target="_blank"
+                  class="btn btn-cv w-100">
+                  Ver GitHub
+                </a>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- GRAVITY -->
+        <div class="col">
+          <div class="card h-100 card-dark">
+
+            <img src="./img/Captura de pantalla 2025-08-18 221536.png"
+              class="card-img-top img-preview"
+              alt="GravityQ">
+
+            <div class="card-body d-flex flex-column">
+
+              <span class="project-type">
+                HACKATHON
+              </span>
+
+              <h5 class="card-title">
+                GRAVITYQ
+              </h5>
+
+              <p class="card-text">
+                E-commerce desarrollado durante hackathon
+                orientado al sector de deportes acuáticos.
+              </p>
+
+              <div class="project-stack">
+                <span>JavaScript</span>
+                <span>Bootstrap</span>
+                <span>Responsive</span>
+              </div>
+
+              <div class="mt-auto">
+
+                <a href="https://github.com/SebastianHernandezDev/Hackato-Room10"
+                  target="_blank"
+                  class="btn btn-cv w-100">
+                  Ver GitHub
+                </a>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- EDUCACIÓN -->
+    <section class="seccion-general educacion container" id="educacion">
+
+      <h2 class="subtitulo-seccion mb-4">
+        EDUCACIÓN
+      </h2>
+
+      <div class="educacion-item mb-4">
+
+        <h4 class="titulo-educacion">
+          Desarrollador Java Full Stack Junior
+        </h4>
+
+        <p class="texto-sobremi">
+          Bootcamp intensivo en Generation.org
+        </p>
+
+      </div>
+
+      <div class="educacion-item mb-4">
+
+        <h4 class="titulo-educacion">
+          Bachiller Técnico en Sistemas
+        </h4>
+
+        <p class="texto-sobremi">
+          Colegio Guillermo León Valencia - Convenio SENA
+        </p>
+
+      </div>
+
+      <div class="educacion-item mb-4">
+
+        <h4 class="titulo-educacion">
+          Fundamentos de Programación
+        </h4>
+
+        <p class="texto-sobremi">
+          Ministerio TIC Colombia
+        </p>
+
+      </div>
+
+    </section>
+
+    <!-- SKILLS -->
+    <section class="seccion-general skills container mt-5" id="skills">
+
+      <h2 class="subtitulo-seccion mb-4">
+        SKILLS
+      </h2>
+
+      <h4 class="categoria-skill">
+        Backend
+      </h4>
+
+      <div class="d-flex flex-wrap gap-3 mb-5">
+
+        <span class="btn-skill">Java</span>
+        <span class="btn-skill">Spring Boot</span>
+        <span class="btn-skill">Spring Security</span>
+        <span class="btn-skill">JWT</span>
+        <span class="btn-skill">JPA</span>
+        <span class="btn-skill">REST APIs</span>
+        <span class="btn-skill">MySQL</span>
+        <span class="btn-skill">PostgreSQL</span>
+        <span class="btn-skill">Docker</span>
+        <span class="btn-skill">Mockito</span>
+        <span class="btn-skill">JUnit</span>
+        <span class="btn-skill">Git</span>
+        <span class="btn-skill">AWS</span>
+
+      </div>
+
+      <h4 class="categoria-skill">
+        Frontend
+      </h4>
+
+      <div class="d-flex flex-wrap gap-3">
+
+        <span class="btn-skill">HTML</span>
+        <span class="btn-skill">CSS</span>
+        <span class="btn-skill">Bootstrap</span>
+        <span class="btn-skill">JavaScript</span>
+        <span class="btn-skill">Responsive Design</span>
+
+      </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer text-center mt-5 py-4">
+
+      <div class="container">
+
+        <p class="mb-3">
+          © 2026 Sebastian Hernandez | Backend Java Developer
+        </p>
+
+        <div class="social-icons-footer">
+
+          <a href="https://github.com/SebastianHernandezDev"
+            target="_blank"
+            class="icon-link-footer">
+            <i class="bi bi-github"></i>
+          </a>
+
+          <a href="https://www.linkedin.com/in/sebastian-david-hernandez-perez-fullstack/"
+            target="_blank"
+            class="icon-link-footer">
+            <i class="bi bi-linkedin"></i>
+          </a>
+
+          <a href="https://www.instagram.com/sebastian_y_ya/"
+            target="_blank"
+            class="icon-link-footer">
+            <i class="bi bi-instagram"></i>
+          </a>
+
+        </div>
+
+      </div>
+
+    </footer>
+
   </main>
-
-  <div class="seccion-general sobre-mi container" id="sobre-mi">
-    <h2 class="subtitulo-seccion">Sobre mí</h2>
-    <p class="texto-sobremi">
-      Hola!, soy Sebastián Hernández, desarrollador Java Full Stack junior. Desde pequeño me apasiona la tecnología, y
-      hoy estoy cumpliendo el sueño de crear soluciones funcionales, limpias y con un enfoque creativo orientado a
-      resultados.
-    </p>
-    <br>
-    <p class="texto-sobremi">
-      Empecé por curiosidad y hoy desarrollo con propósito, buscando siempre mejorar como profesional y como persona.
-    </p>
-    <blockquote class="frase-destacada mt-3">
-      "El código también puede tener estilo. Y propósito."
-    </blockquote>
-    <br>
-    <p class="texto-sobremi mt-3">
-      ¿Quieres conocer más? <a
-        href="https://api.whatsapp.com/send/?phone=573204823503&text&type=phone_number&app_absent=0"
-        class="link-contacto">HABLEMOS</a>.
-    </p>
-  </div>
-
-  <div class="seccion-general portafolio container" id="portafolio">
-    <h2 class="subtitulo-seccion mb-4">PORTAFOLIO</h2>
-    <p class="texto-sobremi mb-5">Aquí puedes ver algunos de mis proyectos personales más recientes.</p>
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-      <div class="col">
-        <div class="card h-100 card-dark">
-          <img src="./img/Captura de pantalla 2025-08-18 221146.png" class="card-img-top img-preview"
-            alt="Vista previa Proyecto 1">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">LA CAFETALERA</h5>
-            <p class="card-text">E-comerce diseñado para agricultures y Backend incroporado.</p>
-            <a href="https://github.com/SebastianHernandezDev/LaCafetalera" target="_blank"
-              class="btn btn-cv mt-auto">Ver en GitHub</a>
-            <a href="https://master.dj8nwub5371ae.amplifyapp.com/" target="_blank" class="btn btn-cv mt-auto"> ver
-              demo</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="card h-100 card-dark">
-          <img src="./img/Captura de pantalla 2025-08-18 221536.png" class="card-img-top img-preview"
-            alt="Vista previa Proyecto 2">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">GRAVITYQ</h5>
-            <p class="card-text">E-comerce producto de una Hackaton dirijido a deportes acuaticos</p>
-            <a href="https://github.com/SebastianHernandezDev/Hackato-Room10" target="_blank"
-              class="btn btn-cv mt-auto">Ver en GitHub</a>
-            <a href="# targer =" _blank" class="btn btn-cv mt-auto"> Ver Demo</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="card h-100 card-dark">
-          <img src="./img/Captura de pantalla 2025-08-18 222221.png" class="card-img-top img-preview"
-            alt="Vista previa Proyecto 3">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">BLOG PARANORMAL</h5>
-            <p class="card-text">Blog paranormal responsive y usando bootstrap.</p>
-            <a href="https://github.com/DanielZamPa/Blog-Paranormalx" target="_blank" class="btn btn-cv mt-auto">Ver en
-              GitHub</a>
-            <a href="# targer =" _blank" class="btn btn-cv mt-auto"> ver demo</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="card h-100 card-dark">
-          <img src="./img/Captura de pantalla 2025-08-18 224530.png" class="card-img-top img-preview"
-            alt="Vista previa Proyecto 4">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">APINASA</h5>
-            <p class="card-text">Imágenes diarias según fecha extraídas de la API de la NASA.</p>
-            <a href="https://github.com/DanielZamPa/Blog-Paranormalx" target="_blank" class="btn btn-cv mt-auto">Ver en
-              GitHub</a>
-            <a href="# targer =" _blank" class="btn btn-cv mt-auto"> ver demo</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="card h-100 card-dark">
-          <img src="./img/backend-development-coding-software-engineering-600nw-2378388687.webp" class="card-img-top img-preview"
-            alt="Vista previa Proyecto 4">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">E-comerce Backend</h5>
-            <p class="card-text">desarrollado en Java con Spring Boot, estructurado bajo el patrón MVC y orientado a
-              servicios RESTful.</p>
-            <a href="https://github.com/SebastianHernandezDev/LaCafetaleraBackend" target="_blank" class="btn btn-cv mt-auto">Ver en
-              GitHub</a>
-          </div>
-        </div>
-      </div>
-<!-- 
-      <div class="col">
-        <div class="card h-100 card-dark">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Proyecto 6</h5>
-            <p class="card-text">Descripción breve del proyecto.</p>
-            <a href="https://github.com/SebastianHernandezDev" target="_blank" class="btn btn-cv mt-auto">Ver en
-              GitHub</a>
-          </div>
-        </div>
-      </div> -->
-    </div>
-  </div>
-
-  <div class="seccion-general educacion container" id="educacion">
-    <h2 class="subtitulo-seccion mb-4">EDUCACIÓN</h2>
-    <div class="educacion-item mb-4">
-      <h4 class="titulo-educacion">Bachiller Técnico en Sistemas</h4>
-      <p class="texto-sobremi mb-1">Colegio Guillermo León Valencia (Duitama)</p>
-      <p class="texto-sobremi">Titulación en convenio con el SENA.</p>
-    </div>
-    <div class="educacion-item mb-4">
-      <h4 class="titulo-educacion">Fundamentos de Programación</h4>
-      <p class="texto-sobremi">Curso corto del Ministerio TIC de Colombia.</p>
-    </div>
-    <div class="educacion-item mb-4">
-      <h4 class="titulo-educacion">Desarrollador Java Full Stack Junior</h4>
-      <p class="texto-sobremi">Bootcamp intensivo en Generation.org.</p>
-    </div>
-  </div>
-
-  <div class="seccion-general skills container mt-5" id="skills">
-    <h2 class="subtitulo-seccion mb-4">SKILLS</h2>
-    <h4 class="categoria-skill">Frontend</h4>
-    <div class="d-flex flex-wrap gap-3 mb-4">
-      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" class="btn-skill"><i
-          class="bi bi-filetype-html me-1"></i>HTML</a>
-      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" class="btn-skill"><i
-          class="bi bi-filetype-css me-1"></i>CSS</a>
-      <a href="https://getbootstrap.com/" target="_blank" class="btn-skill"><i
-          class="bi bi-bootstrap-fill me-1"></i>Bootstrap</a>
-      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" class="btn-skill"><i
-          class="bi bi-filetype-js me-1"></i>JavaScript</a>
-    </div>
-    <h4 class="categoria-skill">Backend</h4>
-    <div class="d-flex flex-wrap gap-3">
-      <a href="https://www.java.com/" target="_blank" class="btn-skill"><i class="bi bi-cup-hot me-1"></i>Java</a>
-      <a href="https://spring.io/projects/spring-boot" target="_blank" class="btn-skill"><i
-          class="bi bi-flower1 me-1"></i>Spring Boot</a>
-      <a href="https://www.python.org/" target="_blank" class="btn-skill"><i class="bi bi-terminal me-1"></i>Python</a>
-    </div>
-  </div>
-  <footer class="footer text-center mt-5 py-4">
-    <div class="container">
-      <p class="mb-2">&copy; 2025 Sebastian Hernandez. Todos los derechos reservados.</p>
-      <div class="social-icons-footer">
-        <a href="https://github.com/SebastianHernandezDev" target="_blank" class="icon-link-footer"><i
-            class="bi bi-github"></i></a>
-        <a href="https://www.linkedin.com/in/sebastian-david-hernandez-perez-fullstack/" target="_blank"
-          class="icon-link-footer"><i class="bi bi-linkedin"></i></a>
-        <a href="https://www.instagram.com/sebastian_y_ya/" target="_blank" class="icon-link-footer"><i
-            class="bi bi-instagram"></i></a>
-      </div>
-    </div>
-  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
   <script src="/main.js"></script>
-</body>
 
+</body>
 </html>
